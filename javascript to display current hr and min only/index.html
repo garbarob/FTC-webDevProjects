@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <title>Time Test</title>
+     <!-- *******************************************************************
+          *                                                                 *
+          *  FILE NAME: Javascript                                 *
+          *  FOLDER NAME(s): Desktop/Dropbox                         *
+          *  AUTHOR: Robert Garba                                              *
+          *  DATE: 11/05/2016                                             *
+          *                                                                 *
+          *  DESCRIPTION:                                                   *
+          *  This code will display only the hour and minutes only.     *
+          *                                                                 *
+          ******************************************************************* -->   
+   </head>
+   <body>
+       <p>Click the button to display the time.</p>       
+       <p id="getTime"> <button onclick="myFunction()">Try it</button> </p>
+
+<script>
+function addZero(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+function myFunction() {
+    var d = new Date();
+    var x = document.getElementById("getTime");
+    var h = addZero(d.getHours());
+    var m = addZero(d.getMinutes());   
+    x.innerHTML = h + ":" + m;
+}
+</script>
+
+</body>
+</html>

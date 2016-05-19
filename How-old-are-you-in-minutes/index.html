@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>JS - Date and time</title>
+    <!-- *******************************************************************
+             *                                                                 *
+             *  FILE NAME: index.htm                                           *
+             *  AUTHOR: Goncalo Pinto                                          *
+             *  DATE: 13/05/2016                                               *
+             *                                                                 *
+             *  DESCRIPTION:                                                   *
+             *                                                                 *
+             * CHARS: http://www.w3schools.com/charsets/ref_html_utf8.asp      *
+             ******************************************************************* -->
+    <link rel="stylesheet" href="css/screen.css">
+</head>
+
+<body>
+    <header class="shadowBox">
+        <p>Test</p>
+    </header>
+    <div id="wrapper" class="shadowBox">
+        <div class="box">
+            <form>
+                <p>
+                    Your date of birth: 
+                    <input type="date" format="dd/MM/yyyy" id="dateOfBirth">
+                </p>
+                <p id="messageBox">&nbsp;</p>
+                <p>
+                    <button id="btnCalculateAge">Calculate age</button>
+                </p>
+            </form>
+        </div>
+            
+        <div class="box">
+            <p class="subtitle">Your age now is:</p>
+            <p id="yourAge" class="notDefined">Not calculated yet</p>
+            
+            <p class="subtitle"><br>Actual Date and Time:</p>
+            <p><span class="myBlock">Date:</span><span id="loadDate"></span></p>
+            <p><span class="myBlock">Time:</span><span id="loadTime"></span></p>
+        </div>
+        <div id="AJAXoutputDiv" class="box"></div>
+    </div>
+    <script type="text/javascript" src="scripts/myscript.js"></script>
+</body>
